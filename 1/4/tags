@@ -1,0 +1,38 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DLIST_H	embrace_change/dlist.h	33;"	d
+DLIST_RET_FAIL	embrace_change/dlist.h	/^	DLIST_RET_FAIL$/;"	e	enum:_DListRet
+DLIST_RET_OK	embrace_change/dlist.h	/^	DLIST_RET_OK,$/;"	e	enum:_DListRet
+DLIST_RET_OOM	embrace_change/dlist.h	/^	DLIST_RET_OOM,$/;"	e	enum:_DListRet
+DLIST_RET_PARAMS	embrace_change/dlist.h	/^	DLIST_RET_PARAMS,$/;"	e	enum:_DListRet
+DLIST_RET_STOP	embrace_change/dlist.h	/^	DLIST_RET_STOP,$/;"	e	enum:_DListRet
+DList	embrace_change/dlist.h	/^typedef struct _DList DList;$/;"	t	typeref:struct:_DList
+DListDataPrintFunc	embrace_change/dlist.h	/^typedef DListRet (*DListDataPrintFunc)(void* data);$/;"	t
+DListNode	embrace_change/dlist.c	/^}DListNode;$/;"	t	typeref:struct:_DListNode	file:
+DListRet	embrace_change/dlist.h	/^}DListRet;$/;"	t	typeref:enum:_DListRet
+_DList	embrace_change/dlist.c	/^struct _DList$/;"	s	file:
+_DListNode	embrace_change/dlist.c	/^typedef struct _DListNode$/;"	s	file:
+_DListRet	embrace_change/dlist.h	/^typedef enum _DListRet$/;"	g
+data	embrace_change/dlist.c	/^	void* data;$/;"	m	struct:_DListNode	file:
+dlist_append	embrace_change/dlist.c	/^DListRet dlist_append(DList* thiz, void* data)$/;"	f
+dlist_create	embrace_change/dlist.c	/^DList* dlist_create(void)$/;"	f
+dlist_delete	embrace_change/dlist.c	/^DListRet dlist_delete(DList* thiz, size_t index)$/;"	f
+dlist_destroy	embrace_change/dlist.c	/^void dlist_destroy(DList* thiz)$/;"	f
+dlist_get_by_index	embrace_change/dlist.c	/^DListRet dlist_get_by_index(DList* thiz, size_t index, void** data)$/;"	f
+dlist_get_node	embrace_change/dlist.c	/^static DListNode* dlist_get_node(DList* thiz, size_t index, int fail_return_last)$/;"	f	file:
+dlist_insert	embrace_change/dlist.c	/^DListRet dlist_insert(DList* thiz, size_t index, void* data)$/;"	f
+dlist_length	embrace_change/dlist.c	/^size_t   dlist_length(DList* thiz)$/;"	f
+dlist_node_create	embrace_change/dlist.c	/^static DListNode* dlist_node_create(void* data)$/;"	f	file:
+dlist_node_destroy	embrace_change/dlist.c	/^static void dlist_node_destroy(DListNode* node)$/;"	f	file:
+dlist_prepend	embrace_change/dlist.c	/^DListRet dlist_prepend(DList* thiz, void* data)$/;"	f
+dlist_print	embrace_change/dlist.c	/^DListRet dlist_print(DList* thiz, DListDataPrintFunc print)$/;"	f
+dlist_set_by_index	embrace_change/dlist.c	/^DListRet dlist_set_by_index(DList* thiz, size_t index, void* data)$/;"	f
+first	embrace_change/dlist.c	/^	DListNode* first;$/;"	m	struct:_DList	file:
+main	embrace_change/main.c	/^int main(int argc, char* argv[])$/;"	f
+next	embrace_change/dlist.c	/^	struct _DListNode* next;$/;"	m	struct:_DListNode	typeref:struct:_DListNode::_DListNode	file:
+prev	embrace_change/dlist.c	/^	struct _DListNode* prev;$/;"	m	struct:_DListNode	typeref:struct:_DListNode::_DListNode	file:
+print_int	embrace_change/main.c	/^static DListRet print_int(void* data)$/;"	f	file:
